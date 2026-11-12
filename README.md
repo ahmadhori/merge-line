@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/metro-map.png" alt="Every PR takes the same line: seven stops from open to live. AI agents run five of them, you run two." width="440">
+  <img src="docs/images/hero.png" alt="A pile of pull requests, with the questions 'which first?', 'reviewed?', 'up to date?' and 'is it live?', becomes a line: each one reviewed, up to date and explained, then you merge." width="860">
 </p>
 
 <h1 align="center">/merge-line</h1>
@@ -29,6 +29,10 @@
 
 ## Who does what
 
+<p align="center">
+  <img src="docs/images/line-map.png" alt="The line as a transit map with eight stops: line up, go, review, update, explain, merge, deploy, live check. Go, merge and deploy are yours; AI agents run the other five. The line is green while a PR is open and purple once it is merged. A failed build, test or live check stops the line." width="720">
+</p>
+
 | You | The AI crew |
 |---|---|
 | **Go**: start the reviews | `pr-state` reads each PR's state and checks |
@@ -50,7 +54,7 @@
 ## What you read before each merge
 
 <p align="center">
-  <img src="docs/images/pr-explained.png" alt="One PR's page: problem, solution, before and after screenshots with a GIF, evidence, follow-up issues on GitHub, owner's steps, and the question: merge it?" width="440">
+  <img src="docs/images/pr-explained.png" alt="One PR's page: the problem, the solution, before and after with screenshots, a GIF and the tests, a follow-up issue on GitHub, an owner's step, and the question: merge it?" width="720">
 </p>
 
 <details>
@@ -122,6 +126,12 @@ cp merge-line/agents/*.md ~/.claude/agents/
 Then just answer it: **go**, **next**, **merged**, **done**.
 
 ## A run, step by step
+
+<p align="center">
+  <img src="docs/images/run.png" alt="A run in the terminal: /merge-line 210-216 lists five PRs in merge order with their review state. PR 214 is up to date and explained; you merge it and say next." width="720">
+</p>
+
+The picture shortens the table. The real one also shows each PR's type, area, deploy and the steps only you can do.
 
 1. **The table.** Your PRs in merge order: code first, grouped by deploy. Each row shows whether it's reviewed, what its deploy takes and any steps only you can do.
 2. **Go.** Reviews start for the first 4 code PRs and keep 4 ahead of you.
