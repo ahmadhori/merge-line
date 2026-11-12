@@ -1,0 +1,12 @@
+{
+  "name": "merge-line",
+  "description": "The /merge-line skill for Claude Code: merge pull requests one at a time, with AI doing the reading.",
+  "owner": { "name": "Ahmad Houri", "url": "https://github.com/ahmadhori" },
+  "plugins": [
+    {
+      "name": "merge-line",
+      "source": "./",
+      "description": "Merge a pile of pull requests one at a time: AI helpers review, update and explain each PR; you say go, merge and deploy."
+    }
+  ]
+}

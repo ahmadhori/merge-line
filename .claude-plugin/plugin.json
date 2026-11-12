@@ -1,0 +1,10 @@
+{
+  "name": "merge-line",
+  "version": "0.1.0",
+  "description": "Merge a pile of pull requests one at a time: AI helpers review, update and explain each PR; you say go, merge and deploy.",
+  "author": { "name": "Ahmad Houri", "url": "https://github.com/ahmadhori" },
+  "homepage": "https://github.com/ahmadhori/merge-line",
+  "repository": "https://github.com/ahmadhori/merge-line",
+  "license": "MIT",
+  "keywords": ["pull-requests", "code-review", "merge", "github", "workflow", "skill"]
+}
